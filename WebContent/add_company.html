@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="online_exam.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+html {
+  /* important! */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* important! */
+  margin-bottom: 64px; /* margin bottom = footer height */
+}
+
+footer {
+  /* important! */
+  bottom: 0;
+  height: 50px; /* height = body margin-bottom */
+  position: absolute;
+  width: 100%;
+  
+ background: #000;
+	color: #fff;
+
+  /* optional */
+  border-top: 1px solid lightgrey;
+  text-align: center;
+}
+
+
+</style>
+
+
+
+</head>
+<body style='background-color: #D2B48C;'>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SignUp</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Reviews</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+
+
+<form width="90%" action="add_company.jsp" style="margin-left:200px"><b><label>Enter Company Name</label></b><br><br>
+<input type="text" name="name"><br><br>
+<b><label>Enter Company Email</label></b><br><br>
+<input type="text" name="email"><br><br>
+<b><label>Enter Company Mobile</label></b><br><br>
+<input type="text" name="mobile"><br><br>
+<b><label>Password</label></b><br><br>
+<input type="text" name="psw"><br><br>
+<input type="submit">
+</form>
+
+
+<!-- Site footer -->
+  <footer>
+  <p>© 2020 Online Exam</p>
+</footer>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="online_exam.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+html {
+  /* important! */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* important! */
+  margin-bottom: 64px; /* margin bottom = footer height */
+}
+
+footer {
+  /* important! */
+  bottom: 0;
+  height: 50px; /* height = body margin-bottom */
+  position: absolute;
+  width: 100%;
+  
+ background: #000;
+	color: #fff;
+
+  /* optional */
+  border-top: 1px solid lightgrey;
+  text-align: center;
+}
+
+
+</style>
+
+
+</head>
+<body style='background-color: #D2B48C;'>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SignUp</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Reviews</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+
+<form action="find_candidates.jsp">
+<fieldset>
+<label><b>Grade Range</b></label>
+<select name="grade1">
+<option value="no">click for grades</option>
+<option value="50">50</option>
+<option value="60">60</option>
+<option value="70">70</option>
+<option value="80">80</option>
+<option value="90">90</option>
+
+</select>
+
+<select name="grade2">
+<option value="no">click for grades</option>
+<option value="60">60</option>
+<option value="70">70</option>
+<option value="80">80</option>
+<option value="90">90</option>
+<option value="100">100</option>
+</select>
+<br><br>
+<label><b>Select Qualification</b> </label>
+<select name="qualify">
+    <option value="no">Qualification</option>
+
+    <option>B.Tech</option>
+    <option>BCA</option>
+    <option>DIPLAMA</option>
+    <option>MCA</option>
+    <option>M.Tech</option>
+    <option>Other</option>
+    
+    </select>
+    <br><br>
+    <label><b> Select Subject</b></label><br><br>
+    <select name="subject">
+        <option value="no">Subject</option>
+    
+    <option>C</option>
+    <option>C++</option>
+    <option>JAVA</option>
+    <option>PHP</option>
+    <option>HTML</option>
+    <option>Other</option>
+    </select>
+<br><br>
+ <label><b>Select Pass Year Range</b></label><br><br>
+    <select name="pass1">
+        <option value="no">pass_year</option>
+    
+    <option>2014</option>
+    <option>2015</option>
+    <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+    
+       </select>
+<select name="pass2">
+        <option value="no">pass_year</option>
+
+    <option>2015</option>
+    <option>2016</option>
+    <option>2017</option>
+        <option>2018</option>
+    
+        <option>2019</option>
+    
+        <option>2020</option>
+        <option>2021</option>
+    
+       </select>
+
+
+</fieldset>
+<input type="submit">
+
+</form>
+
+<!-- Site footer -->
+  <footer>
+  <p>© 2020 Online Exam</p>
+</footer>
+</body>
+</html>
